@@ -4,7 +4,7 @@
 body{
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  align-content: center;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
   z-index: 1;
@@ -154,10 +154,11 @@ li .link:hover{
   display: flex;
   flex-direction: row;
   margin-top: 0;
+  width: 100%;
 }
 .about-content{
   position: relative;
-  left:15em;
+  left: 15em;
 }
 .about-content h1{
   font-family: 'Montserrat', sans-serif;
@@ -178,14 +179,15 @@ li .link:hover{
 .about img{
   width: 550px;
   margin-left: 5em;
+  margin-top: 5em;
+  margin-right: 1em;
   float: right;
 }
 .work{
   position: relative;
   display: flex;
   flex-direction: column;
-  left:15em;
-  
+  left:12em;
   align-items: flex-start;
 }
 .work .heading{
