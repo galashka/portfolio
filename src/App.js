@@ -1,24 +1,54 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Header from './components/Header';
+import About from './components/About';
+import Work from './components/work';
+import Contact from './components/Contact';
+import Navbar from './components/Navbar';
+
+import Particles from 'react-particles-js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Particles className='particles'
+    params={{
+	    "particles": {
+	        "number": {
+	            "value": 100
+	        },
+	        "size": {
+	            "value": 5
+	        }
+	    },
+	    "interactivity": {
+	        "events": {
+	            "onhover": {
+	                "enable": true,
+	                "mode": "repulse"
+	            }
+	        }
+	    }
+	}} />
+      <Navbar></Navbar>
+            
+      <div className="App-header">
+      <Header></Header>
+      </div>
+
+      <div className='About'>
+        <About></About>
+      </div>
+
+      <div className='work'>
+        <Work></Work>
+      </div>
+
+      <div className='contact'>
+        <Contact></Contact>
+      </div>
+
     </div>
   );
 }
