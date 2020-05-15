@@ -174,20 +174,20 @@ li .link:hover{
   width: 34em;
   margin-top: 1em;
   margin-left: -7em;
-  margin-right: 8em;
+  margin-right: 6em;
 }
 .about img{
-  width: 550px;
+  width: 500px;
   margin-left: 5em;
-  margin-top: 5em;
-  margin-right: 1em;
+  margin-top: 6em;
+  margin-right: 3em;
   float: right;
 }
 .work{
   position: relative;
   display: flex;
   flex-direction: column;
-  left:12em;
+  left:10em;
   align-items: flex-start;
 }
 .work .heading{
